@@ -1,0 +1,16 @@
+# Core dependencies
+numpy==1.24.3
+pandas==2.0.2
+scikit-learn==1.2.2
+joblib==1.2.0
+
+# API
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.4.2
+pydantic-settings==2.0.3
+python-multipart==0.0.6
+
+# Utilities
+python-dotenv==1.0.0
+

@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  decision-tree-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: decision-tree-weather-api
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=Decision Tree Weather Prediction API
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - MODEL_DIR=model
+      - DATA_DIR=data
+    volumes:
+      - ./logs:/app/logs
+      - ./model:/app/model
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - weather-network
+
+networks:
+  weather-network:
+    driver: bridge
+
