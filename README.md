@@ -89,7 +89,8 @@ The model achieves:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/prashantmaya/decision-trees-and-hyperparameter-tuning.git
+
 cd decision-tress-and-hyperparameters
 
 # Build and run with Docker Compose
@@ -134,7 +135,7 @@ Visit http://localhost:8000/docs for interactive API documentation.
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/prashantmaya/decision-trees-and-hyperparameter-tuning.git
 cd decision-tress-and-hyperparameters
 
 # Create and activate virtual environment
@@ -516,9 +517,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Prashant Soni - [@prashant](https://github.com/prashant)
+Prashant Soni - [@prashantmaya](https://github.com/prashantmaya)
 
-Project Link: [https://github.com/prashant/decision-tree-weather-prediction](https://github.com/prashant/decision-tree-weather-prediction)
+Project Link: [https://github.com/prashantmaya/decision-trees-and-hyperparameter-tuning](https://github.com/prashantmaya/decision-trees-and-hyperparameter-tuning)
 
 ## 📈 Future Enhancements
 
